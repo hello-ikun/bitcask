@@ -1,4 +1,32 @@
 # bitcask-go
+## example
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/hello-ikun/bitcask"
+)
+
+func main() {
+
+	db := bitcask.DefaultClient()
+	for i := 0; i < 100; i++ {
+		key := []byte(fmt.Sprintf("key1:%d", i))
+		val := []byte(fmt.Sprintf("sang:%d", i))
+		db.Set(key, val)
+	}
+
+	for i := 0; i < 100; i++ {
+		key := []byte(fmt.Sprintf("key1:%d", i))
+		val, err := db.Get(key)
+		if err == nil {
+			fmt.Println(string(key), string(val))
+		}
+	}
+}
+```
 ## simple implementation
 >Satisfies normal data kv storage
 ```go
