@@ -1,7 +1,7 @@
 package bitcask_go
 
 import (
-	ikundb "github.com/hello-ikun/bitcask_go/ikunDb"
+	ikundb "github.com/hello-ikun/bitcask/ikunDb"
 )
 
 // Db 是对 ikundb.IkunDb 的包装

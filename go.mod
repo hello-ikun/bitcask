@@ -1,4 +1,4 @@
-module github.com/hello-ikun/bitcask_go
+module github.com/hello-ikun/bitcask
 
 go 1.21.6
 
