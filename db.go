@@ -1,4 +1,4 @@
-package bitcask_go
+package bitcask
 
 import (
 	ikundb "github.com/hello-ikun/bitcask/ikunDb"
